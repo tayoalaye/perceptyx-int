@@ -1,6 +1,6 @@
 create database perceptyx;
 create user candidate;
-grant all privileges on perceptyx.* to 'mysite_user2'@'localhost' identified by 'password';
+grant all privileges on perceptyx.* to 'candidate'@'localhost' identified by 'password';
 flush privileges;
 use perceptyx
 

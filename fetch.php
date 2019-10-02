@@ -2,9 +2,9 @@
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 
-$dbname = 'mysite';
-$dbuser = 'mysite_user';
-$dbpass = 'MyadmInp@Ss';
+$dbname = 'perceptyx';
+$dbuser = 'candidate';
+$dbpass = 'password';
 $dbhost = 'localhost';
 
 $link = mysqli_connect($dbhost, $dbuser, $dbpass);
@@ -15,7 +15,7 @@ if($link === false){
 }
  
 // Attempt select query execution
-$sql= "select * from mysite.employee where hiredate > '1990-01-01' and birthdate = '1965-02-01' and sex ='MALE'";
+$sql= "select * from perceptyx.employee where hiredate > '1990-01-01' and birthdate = '1965-02-01' and sex ='MALE'";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
